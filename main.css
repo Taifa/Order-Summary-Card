@@ -1,126 +1,121 @@
 @font-face {
-  font-family: RedHatReg;
-  src: url(Files/RedHatDisplay-Regular.ttf);
+    font-family:RedHat;
+    src: url(Files/RedHatDisplay-Regular.ttf);
 }
 @font-face {
-  font-family: RedHatMed;
-  src: url(Files/RedHatDisplay-Medium.ttf);
+    font-family:RedHatBold;
+    src: url(Files/RedHatDisplay-Bold.ttf);
 }
 @font-face {
-  font-family: RedHatBold;
-  src: url(Files/RedHatDisplay-Bold.ttf);
+    font-family:RedHatBlack;
+    src: url(Files/RedHatDisplay-Black.ttf);
 }
 @font-face {
-  font-family: RedHatBlack;
-  src: url(Files/RedHatDisplay-Black.ttf);
+    font-family:RedHatMed;
+    src: url(Files/RedHatDisplay-Medium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
 }
 body {
-  margin: 0;
-  padding: 0;
-  background-color: hsl(225, 100%, 94%);
-  background-image: url(Files/pattern-background-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: 2000px;
-  background-position-y: -100px;
-  text-align: center;
+    background-image: url(Files/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: 100%;
 }
 .card {
-  height: 700px;
-  width: 425px;
-  position: relative;
-  left: 50em;
-  top: 10em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px;
-  background-color: white;
-  box-shadow: 10px 10px 10px 10px grey;
-}
-.image-dancer {
-  width: 425px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  box-shadow: 0px 10px 20px hsl(221, 100%, 87%);
+  background-color: white; 
+  height:40em;
+  width: 25em;
 }
 h1 {
-  position: relative;
-  top: 10px;
-  color: hsl(223, 47%, 23%);
-  font-family: RedHatBlack;
+    font-family: RedHatBlack;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1.5em;
 }
-p {
-  color: hsl(224, 23%, 55%);
+.main-paragraph {
+    margin-top: 1em;
+    text-align: center;
+    font-family: RedHat;
+    color:hsl(224, 23%, 55%);
+    line-height: 1.5em;
 }
-.p1 {
-  position: relative;
-  top: 7px;
-  font-family: RedHatMed;
-  line-height: 27px;
-  font-size: 16.5px;
+.small-card {
+    width: 20em;
+    height: 5em;
+    margin-top: 1.5em;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 10px;
 }
-.plan-tab {
-  position: relative;
-  top: 20px;
-  width: 350px;
-  left: 35px;
-  height: 100px;
-  display: block;
-  background-color: hsl(225, 100%, 98%);
-  border-radius: 10px;
+.music-note {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-top: 5%;
+    margin-left: 7%;
 }
-.image-music-note {
-  position: relative;
-  right: 130px;
-  top: 25px;
+h5 {
+    font-family: RedHatBlack;
+    margin-top: 1.3em;
+    margin-left: 6.5em;
 }
-h4 {
-  position: relative;
-  font-family: RedHatBlack;
-  color: hsl(223, 47%, 23%);
-  bottom: 50px;
-  right: 35px;
+.price {
+    font-family: RedHat;
+    margin-top: .5em;
+    margin-left: 6.5em;
+    font-size: .85em;
+    color:hsl(224, 23%, 55%);
 }
-.p2 {
-  position: relative;
-  bottom: 68px;
-  right: 40px;
-  font-family: RedHatMed;
-  font-size: medium;
+.change {
+    font-family: RedHatBold;
+    font-size: .8em;
+    float: right;
+    margin-top: -2em;
+    margin-right: 1.5em;
 }
-.a1 {
-  font-family: RedHatBold;
-  position: relative;
-  bottom: 117px;
-  left: 120px;
-  font-size: 15px;
+.proceed {
+    font-family: RedHatBold;
+    background-color: hsl(245, 75%, 52%);
+    width: 24em;
+    height: 3.4em;
+    border-radius: 10px;;
+    color: white;
+    border: none;
+    position: fixed;
+    top:76.5%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0px 10px 20px hsl(221, 100%, 87%);
 }
-.translucent-button {
-  font-family: RedHatBold;
-  text-decoration: none;
-  position: relative;
-  top: 120px;
-  color: hsl(224, 23%, 55%);
-  border: none;
-  cursor: pointer;
+.cancel {
+    color: hsl(224, 23%, 55%);
+    font-family: RedHatBold;
+    font-size: .8em;
+    position: fixed;
+    top:90%;
+    left: 50%;
+    transform: translate(-50%);
+    cursor:pointer;
 }
-.blue-button {
-  font-family: RedHatBold;
-  text-decoration: none;
-  color: white;
-  position: relative;
-  background-color: hsl(245, 75%, 52%);
-  border-radius: 10px;
-  padding: 15px 100px;
-  top: 65px;
+.cancel:hover {
+    color:hsl(223, 47%, 23%);
 }
-.blue-button:hover {
-  box-shadow: 5px 10px 10px 10px grey;
-  transition: 350ms;
+.proceed:hover {
+    cursor: pointer;
+    background-color: hsl(234, 93%, 72%);
 }
-.translucent-button:hover {
-  color: hsl(245, 75%, 52%);
-  transition: 300ms;
+.change:hover {
+    color: hsl(234, 93%, 72%);
+    text-decoration: none;
 }
-.a1:hover {
-  color: grey;
-  transition: 300ms;
-}
-
-
